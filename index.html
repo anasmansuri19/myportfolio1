@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventurer's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Adventurer's Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#skills">My Skills</a></li>
+        </ul>
+            <div class="user"> 
+                <a href="profile.html">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </div>
+    </nav>
+    <!-- Landing Section -->
+    <section class="landing">
+        <div class="overlay">
+            <h1>Welcome to my Journey</h1>
+            <p>Embark on a journey of code and creativity</p>
+        </div>
+        <a href="#about" class="cta-btn">Start the Adventure</a>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="about fade-in">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="WhatsApp Image 2024-09-23 at 23.27.19_d2031283.jpg" alt="Profile Picture">
+        </div>
+        <div class="about-content">
+            <h2>The Adventurer</h2>
+            <p id="about-description">I'm a web developer passionate about solving complex problems and creating user-friendly interfaces. My journey in web development began as an exploration, and now it's my greatest adventure.</p>
+            <a href="#describe" class="cta-btn">Discover More</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- describe Section -->
+    <section id="describe">
+        <h2>The Adventurer</h2>
+        <p>I'm a web developer passionate about solving complex problems and creating user-friendly interfaces.</p>
+        <a href="#projects" class="cta-btn2">Explore Projects</a>
+    </section>
+
+    <!-- slideshow container   -->
+     <div class="slider-container">
+        <!-- full width image number and image  -->
+         <div class="myslide fade">
+            <div class="numbertext">1/3</div>
+            <img src="github.jpg.png" alt="project 1" width="100%">
+            <div class="text">caption text </div>
+         </div>
+         <div class="myslide fade">
+            <div class="numbertext">2/3</div>
+            <img src="clone" alt="project 2" width="100%">
+            <div class="text">caption text </div>
+         </div>
+         <div class="myslide fade">
+            <div class="numbertext">33/3</div>
+            <img src="github.jpg.png" alt="project 3" width="50%">
+            <div class="text">caption text </div>
+         </div>
+         <!-- next and pre button -->
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+          
+          
+    <!-- Projects Section -->
+    <section id="projects" class="projects fade-in">
+        <h2>The Expedition</h2>
+        <div class="slider-container">
+            <div class="myslide fade">
+                <div class="slide">
+                    <a href="clone">
+                    <img src="clone.png" alt="Project 1" width="50%">
+                    <h3>Scaling the Vue.js Peak</h3>
+                    <p>Built a dynamic app using Vue.js with real-time data.</p>
+                </a>
+                </div>
+                <div class="slide">
+                    <a href="git hub">
+                    <img src="github.jpg.png" alt="Project 2" width="50%">
+                    <h3>Reacting to Challenges</h3>
+                    <p>Showcased my skills in React and API integration.</p> 
+                </a>
+                </div>
+                <div class="slide">
+                    <a href="git hub">
+                    <img src="github.jpg.png.jpg" alt="Project 3">
+                    <h3>Exploring Full Stack</h3>
+                    <p>Full stack project using Node.js and MongoDB.</p>
+                </a>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="prev-slide">&#10094;</button>
+                <button class="next-slide">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    
+<!-- Skills Section -->
+<section id="skills" class="skills fade-in">
+    <h2>My Skills</h2>
+    <div class="skill-list">
+        <div class="skill-item">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML 5</p>
+        </div>
+        <div class="skill-item">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>CSS 3</p>
+        </div>
+        <div class="skill-item">
+            <i class="fa-brands fa-js"></i>
+            <p>Java Script</p>
+        </div>
+        <div class="skill-item">
+            <i class="fa-brands fa-react"></i>
+            <p>React</p>
+        </div>
+        <div class="skill-item">
+            <i class="fa-brands fa-vuejs"></i>
+            <p>Vue.js</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact fade-in">
+        <h2>Contact Me</h2>
+        <p>Let's start a new journey together!</p>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+            <p id="form-response"></p> <!-- To show success/error messages -->
+        </form>
+    </section>
+        <!-- Chatbot Container -->
+        <div class="chatbot-container">
+            <button id="chatbot-btn">
+                <i class="fa fa-comments"></i> Chat
+            </button>
+            <div id="chatbox" class="chatbox hidden">
+                <div class="chatbox-header">
+                    <h3>Chatbot</h3>
+                    <button id="close-chat" class="close-chat">&times;</button>
+                </div>
+                <div class="chatbox-body">
+                    <div id="chat-content">
+                        <p class="bot-message">Hi! How can I help you today?</p>
+                    </div>
+                </div>
+                <div class="chatbox-footer">
+                    <input type="text" id="user-input" placeholder="Type your message...">
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+    
+    <footer>
+        <p>© 2024 Adventurer's Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+    </html>

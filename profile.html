@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Conditional Profile Section -->
+    <section id="user-profile" class="user-profile-section">
+        <h2>User Profile</h2>
+        <p id="profile-name"></p>
+        <p id="profile-email"></p>
+        <button id="logout-btn">Logout</button>
+    </section>
+
+    <!-- Login and Sign-Up Section (hidden by default, shown when user is not logged in) -->
+    <section id="auth-options" class="auth-section" style="display:none;">
+        <h2>Login or Sign Up</h2>
+        <a href="login.html" class="auth-btn">Login</a>
+        <a href="signup.html" class="auth-btn">Sign Up</a>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
